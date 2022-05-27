@@ -68,9 +68,10 @@
     font-size: 1.3rem;
 }
 
-#do{
-    margin-top: 25px;
+#form-title{
+    margin-top: 20px;
     font-size: 1.1rem;
+    font-weight: bold;
 }
 
 #form{
@@ -96,6 +97,7 @@ input{
     height: 1.5rem;
     color:#B41D6C;
     padding-left: 5px;
+    border-color: #08979D;
     
 }
 
@@ -103,7 +105,7 @@ input:focus{
     border-style: solid;
     border-width: thin;
     border-color: #B41D6C;
-    opacity: 0.6;
+    opacity: 0.8;
 }
 
 button{
@@ -128,4 +130,13 @@ input:valid::after{
 
 input:invalid::after{
     border-color: red;
+}
+
+.entry{
+    box-shadow: 5px 5px;
+    background-color:aliceblue;
+    padding: 5px;
+    margin: 10px;
+    height: 35vh;
+    width: 40vw;
 }
