@@ -91,9 +91,11 @@
 }
 
 input{
-    border-radius: 2px;
-    opacity: 0.6;
+    border-radius: 3px;
+    opacity: 0.3;
     height: 1.5rem;
+    color:#B41D6C;
+    padding-left: 5px;
     
 }
 
@@ -101,6 +103,7 @@ input:focus{
     border-style: solid;
     border-width: thin;
     border-color: #B41D6C;
+    opacity: 0.6;
 }
 
 button{
@@ -110,10 +113,19 @@ button{
     background-color: #B41D6C;
     color: #08979D;
     margin-bottom: 5px;
+    border-radius: 4px;
 }
 
 button:hover{
     background-color: #08979D;
     color: #B41D6C;
     box-shadow: 3px 3px;
+}
+
+input:valid::after{
+    border-color: green;
+}
+
+input:invalid::after{
+    border-color: red;
 }
