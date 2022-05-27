@@ -5,33 +5,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+    <div id="main">
         <div id="image">
-            <div id="modal">
-                <div id="logo"></div>
+            <div id="overlay">
+                <img src="./images/logo.svg" alt="icon" id="logo">
+                <h2>Apollo</h2>
             </div>
         </div>
 
-        <div id="form">
-            <div id="info"></div>
-            <p id="service">This is not a real service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
-            <br>
-            <p id="want">You <em>know</em> you want to.</p>
-            <div id="answers"></div>
-            <form action="">
+        <div id="right">
 
 
+            <div id="info">
+                <p id="service">This is not a real service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+                <br>
+                <p id="want">You <em>know</em> you want to.</p>
+            </div>
 
+            <p id="do">Let's Do This!</p>
 
+            <form action="#" id="form">
+                
+                <div class="input">
+                    <label for="first-name" class="form-label">First Name</label>
+                    <input type="text" name="first-name" id="first-name" required>
+                </div>
+
+                <div class="input">
+                    <label for="last-name" class="form-label">Last Name</label>
+                    <input type="text" name="last-name" id="last-name">
+                </div>
+
+                <div class="input">
+                    <label for="email" class="form-label"Email>Email</label>
+                    <input type="email" name="email" id="email" required match pattern="/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/">
+                </div>
+
+                <div class="input">
+                    <label for="phone" class="form-label">Phone Number</label>
+                    <input type="tel" name="phone" id="phone" minlength="10" maxlength="13" match pattern="/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im">
+                </div>
+
+                <div class="input">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" name="password" id="password" required>
+                </div>
+
+                <div class="input">
+                    <label for="confirm" class="form-label">Confirm Password</label>
+                    <input type="password" name="confirm" id="confirm" required>
+                </div>
             </form>
+        
 
             <div id="submit">
-                <button type = "submit">Create Account</button>
-
+                <button type = "submit"><b>Create Account</b></button>
                 <p id="exist">Already have an account? <a href="">Log in</a></p>
-
             </div>
         </div>
 

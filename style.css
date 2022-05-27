@@ -1,1 +1,119 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,300;0,400;0,600;1,400;1,500;1,600&display=swap');
+
+*{
+    font-family: Barlow, Roboto, Segoe UI, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+#main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+#image{
+    width: 45vw;
+    background-image: url(./images/side3.jpeg);
+    background-position: center;
+    background-size: auto;
+}
+
+#overlay{
+    margin-top: 40vh;
+    display: flex;
+    height: 10vh;
+    width: 45vw;
+    align-items: center;
+    flex-flow: row nowrap;
+    background-color: black;
+    opacity: 0.7;
+    justify-content: center;
+    gap: 20px;
+}
+
+#overlay > h2{
+    color: white;
+    font-weight: bold;
+    opacity: 1;
+}
+
+#logo{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+#right{
+    background-color: #08979D;
+    width: 60vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #B41D6C;
+}
+
+#right > *{
+    margin-left: 2vw;
+}
+
+#info{
+    font-size: 1.3rem;
+    width: 40vw;
+}
+
+#want{
+    font-size: 1.3rem;
+}
+
+#do{
+    margin-top: 25px;
+    font-size: 1.1rem;
+}
+
+#form{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 17px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.input{
+    width:35%;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+input{
+    border-radius: 2px;
+    opacity: 0.6;
+    height: 1.5rem;
+    
+}
+
+input:focus{
+    border-style: solid;
+    border-width: thin;
+    border-color: #B41D6C;
+}
+
+button{
+    width: 40vw;
+    height: 7vh;
+    text-transform: uppercase;
+    background-color: #B41D6C;
+    color: #08979D;
+    margin-bottom: 5px;
+}
+
+button:hover{
+    background-color: #08979D;
+    color: #B41D6C;
+    box-shadow: 3px 3px;
+}
