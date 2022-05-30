@@ -46,6 +46,12 @@
     width: 2.5rem;
 }
 
+.cite{
+    text-align: center;
+    margin-top: 45vh;
+    color: white;
+}
+
 #right{
     background-color: #08979D;
     width: 60vw;
